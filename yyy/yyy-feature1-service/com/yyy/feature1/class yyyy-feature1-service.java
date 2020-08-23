@@ -11,6 +11,10 @@ public class yyyy-feature1-service implements yyy-feature1-api {
   @Override
   public List<String> split(String content) {
     String[] splits = content.split("|");
-    return Arrays.toList(splits);
+    if (split.length > 0) {
+      return Arrays.toList(splits);      
+    } else {
+      return Arrays.emptyList();
+    }
   }
 }
